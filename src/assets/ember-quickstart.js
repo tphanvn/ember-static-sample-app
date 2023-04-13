@@ -522,8 +522,8 @@
   });
   _exports.default = void 0;
   var _default = Ember.HTMLBars.template({
-    "id": "+wI5SJ1p",
-    "block": "{\"symbols\":[],\"statements\":[[7,\"welcome-page\",[],[[],[]],null],[1,1,0,0,\"\\n\"],[1,1,0,0,\"\\n\"],[1,0,0,0,[31,0,0,[27,[26,1,\"CallHead\"],[]],[[31,0,0,[27,[26,0,\"CallHead\"],[]],null,null]],null]]],\"hasEval\":false,\"upvars\":[\"-outlet\",\"component\"]}",
+    "id": "1+rsnu6d",
+    "block": "{\"symbols\":[],\"statements\":[[7,\"welcome-page\",[],[[],[]],null],[1,1,0,0,\"\\n\"],[1,1,0,0,\"\\n\"],[1,0,0,0,[31,0,0,[27,[26,1,\"CallHead\"],[]],[[31,0,0,[27,[26,0,\"CallHead\"],[]],null,null]],null]],[1,1,0,0,\"\\n\\n\"],[7,\"product-list\",[],[[\"@title\"],[\" thien\"]],null]],\"hasEval\":false,\"upvars\":[\"-outlet\",\"component\"]}",
     "meta": {
       "moduleName": "ember-quickstart/templates/application.hbs"
     }
