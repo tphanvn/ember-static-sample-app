@@ -49,6 +49,179 @@
     }
   });
 });
+;define("ember-quickstart/components/product-list/component", ["exports"], function (_exports) {
+  "use strict";
+
+  Object.defineProperty(_exports, "__esModule", {
+    value: true
+  });
+  _exports.default = void 0;
+  var _dec, _dec2, _class, _descriptor;
+  function _initializerDefineProperty(target, property, descriptor, context) { if (!descriptor) return; Object.defineProperty(target, property, { enumerable: descriptor.enumerable, configurable: descriptor.configurable, writable: descriptor.writable, value: descriptor.initializer ? descriptor.initializer.call(context) : void 0 }); }
+  function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+  function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return typeof key === "symbol" ? key : String(key); }
+  function _toPrimitive(input, hint) { if (typeof input !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (typeof res !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
+  function _initializerWarningHelper(descriptor, context) { throw new Error('Decorating class property failed. Please ensure that ' + 'proposal-class-properties is enabled and runs after the decorators transform.'); }
+  function _applyDecoratedDescriptor(target, property, decorators, descriptor, context) { var desc = {}; Object.keys(descriptor).forEach(function (key) { desc[key] = descriptor[key]; }); desc.enumerable = !!desc.enumerable; desc.configurable = !!desc.configurable; if ('value' in desc || desc.initializer) { desc.writable = true; } desc = decorators.slice().reverse().reduce(function (desc, decorator) { return decorator(target, property, desc) || desc; }, desc); if (context && desc.initializer !== void 0) { desc.value = desc.initializer ? desc.initializer.call(context) : void 0; desc.initializer = undefined; } if (desc.initializer === void 0) { Object.defineProperty(target, property, desc); desc = null; } return desc; }
+  let ProductListComponent = (_dec = Ember._action, _dec2 = Ember._tracked, (_class = class ProductListComponent extends Ember.Component {
+    constructor() {
+      super(...arguments);
+      // --- properties
+      _initializerDefineProperty(this, "show", _descriptor, this);
+    }
+    // --- overrides
+    // init() {
+    //   super.init(...arguments);
+
+    //   this.addObserver("show", this, "propertyDidChange");
+    // }
+
+    // willDestroy() {
+    //   super.init(...arguments);
+
+    //   document.body.classList.remove("noscroll");
+    // }
+
+    // --- actions
+
+    open() {
+      this.set("show", true);
+    }
+  }, (_applyDecoratedDescriptor(_class.prototype, "open", [_dec], Object.getOwnPropertyDescriptor(_class.prototype, "open"), _class.prototype), _descriptor = _applyDecoratedDescriptor(_class.prototype, "show", [_dec2], {
+    configurable: true,
+    enumerable: true,
+    writable: true,
+    initializer: function () {
+      return false;
+    }
+  })), _class));
+  _exports.default = ProductListComponent;
+});
+;define("ember-quickstart/components/product-list/template", ["exports"], function (_exports) {
+  "use strict";
+
+  Object.defineProperty(_exports, "__esModule", {
+    value: true
+  });
+  _exports.default = void 0;
+  var _default = Ember.HTMLBars.template({
+    "id": "98MgJn7u",
+    "block": "{\"symbols\":[\"@title\"],\"statements\":[[9,\"h2\",true],[10],[1,1,0,0,\"This is product list\"],[1,0,0,0,[27,[24,1],[]]],[11],[1,1,0,0,\"\\n\"],[9,\"button\",false],[23,\"class\",\"f-close-btn\",null],[3,0,0,[27,[26,0,\"ModifierHead\"],[]],[\"click\",[27,[24,0],[\"open\"]]],null],[10],[1,1,0,0,\"\\n  open\\n\"],[11],[1,1,0,0,\"\\n\\n\"],[7,\"slide-out\",[],[[\"@show\",\"@title\"],[[27,[24,0],[\"show\"]],\"title\"]],[[\"default\"],[{\"statements\":[[1,1,0,0,\"\\n  \"],[9,\"div\",true],[10],[1,1,0,0,\"this is slide out\"],[11],[1,1,0,0,\"\\n\"]],\"parameters\":[]}]]]],\"hasEval\":false,\"upvars\":[\"on\"]}",
+    "meta": {
+      "moduleName": "ember-quickstart/components/product-list/template.hbs"
+    }
+  });
+  _exports.default = _default;
+});
+;define("ember-quickstart/components/slide-out/component", ["exports"], function (_exports) {
+  "use strict";
+
+  Object.defineProperty(_exports, "__esModule", {
+    value: true
+  });
+  _exports.default = void 0;
+  var _dec, _dec2, _dec3, _dec4, _dec5, _class, _descriptor, _descriptor2, _descriptor3;
+  function _initializerDefineProperty(target, property, descriptor, context) { if (!descriptor) return; Object.defineProperty(target, property, { enumerable: descriptor.enumerable, configurable: descriptor.configurable, writable: descriptor.writable, value: descriptor.initializer ? descriptor.initializer.call(context) : void 0 }); }
+  function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+  function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return typeof key === "symbol" ? key : String(key); }
+  function _toPrimitive(input, hint) { if (typeof input !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (typeof res !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
+  function _initializerWarningHelper(descriptor, context) { throw new Error('Decorating class property failed. Please ensure that ' + 'proposal-class-properties is enabled and runs after the decorators transform.'); }
+  function _applyDecoratedDescriptor(target, property, decorators, descriptor, context) { var desc = {}; Object.keys(descriptor).forEach(function (key) { desc[key] = descriptor[key]; }); desc.enumerable = !!desc.enumerable; desc.configurable = !!desc.configurable; if ('value' in desc || desc.initializer) { desc.writable = true; } desc = decorators.slice().reverse().reduce(function (desc, decorator) { return decorator(target, property, desc) || desc; }, desc); if (context && desc.initializer !== void 0) { desc.value = desc.initializer ? desc.initializer.call(context) : void 0; desc.initializer = undefined; } if (desc.initializer === void 0) { Object.defineProperty(target, property, desc); desc = null; } return desc; }
+  let SlideOutComponent = (_dec = Ember._action, _dec2 = Ember._action, _dec3 = Ember._tracked, _dec4 = Ember._tracked, _dec5 = Ember._tracked, (_class = class SlideOutComponent extends Ember.Component {
+    constructor() {
+      super(...arguments);
+      // --- properties
+      _initializerDefineProperty(this, "_show", _descriptor, this);
+      _initializerDefineProperty(this, "clickOutsideToClose", _descriptor2, this);
+      _initializerDefineProperty(this, "hasOverlay", _descriptor3, this);
+    }
+    // --- overrides
+    init() {
+      super.init(...arguments);
+      this.addObserver('show', this, 'propertyDidChange');
+    }
+    willDestroy() {
+      super.init(...arguments);
+      document.body.classList.remove("noscroll");
+    }
+
+    // --- actions
+    clickOnOverlay() {
+      if (this.clickOutsideToClose) {
+        this.close();
+      }
+    }
+    close() {
+      if (!Ember.isEmpty(this.onClose)) {
+        if (this.onClose() === false) {
+          return;
+        }
+      }
+      this.set("show", false);
+    }
+    get show() {
+      return this._show;
+    }
+    set show(value) {
+      if (this._show != value) {
+        if (value && !Ember.isEmpty(this.onLaunchDialog)) {
+          if (this.onLaunchDialog() === false) {
+            return;
+          }
+        }
+        this._show = value;
+        this.set("show", value);
+      }
+    }
+
+    // --- methods
+    propertyDidChange() {
+      if (this.show) {
+        document.body.className += " noscroll";
+      } else {
+        document.body.classList.remove("noscroll");
+      }
+    }
+  }, (_applyDecoratedDescriptor(_class.prototype, "clickOnOverlay", [_dec], Object.getOwnPropertyDescriptor(_class.prototype, "clickOnOverlay"), _class.prototype), _applyDecoratedDescriptor(_class.prototype, "close", [_dec2], Object.getOwnPropertyDescriptor(_class.prototype, "close"), _class.prototype), _descriptor = _applyDecoratedDescriptor(_class.prototype, "_show", [_dec3], {
+    configurable: true,
+    enumerable: true,
+    writable: true,
+    initializer: function () {
+      return false;
+    }
+  }), _descriptor2 = _applyDecoratedDescriptor(_class.prototype, "clickOutsideToClose", [_dec4], {
+    configurable: true,
+    enumerable: true,
+    writable: true,
+    initializer: function () {
+      return true;
+    }
+  }), _descriptor3 = _applyDecoratedDescriptor(_class.prototype, "hasOverlay", [_dec5], {
+    configurable: true,
+    enumerable: true,
+    writable: true,
+    initializer: function () {
+      return true;
+    }
+  })), _class));
+  _exports.default = SlideOutComponent;
+});
+;define("ember-quickstart/components/slide-out/template", ["exports"], function (_exports) {
+  "use strict";
+
+  Object.defineProperty(_exports, "__esModule", {
+    value: true
+  });
+  _exports.default = void 0;
+  var _default = Ember.HTMLBars.template({
+    "id": "AoTBM3Ai",
+    "block": "{\"symbols\":[\"&default\",\"@size\",\"@title\"],\"statements\":[[9,\"div\",true],[13,\"class\",[32,[\"f-slide-out-wrapper\",[31,33,2,[27,[26,0,\"CallHead\"],[]],[[27,[24,0],[\"show\"]],\" active\"],null]]],null],[10],[1,1,0,0,\"\\n  \"],[9,\"div\",false],[23,\"class\",\"f-slide-out-overlay\",null],[3,0,0,[27,[26,1,\"ModifierHead\"],[]],[\"click\",[27,[24,0],[\"clickOnOverlay\"]]],null],[10],[11],[1,1,0,0,\"\\n\\n  \"],[9,\"div\",true],[13,\"class\",[32,[\"f-slide-out \",[27,[24,2],[]],[31,178,2,[27,[26,0,\"CallHead\"],[]],[[27,[24,0],[\"show\"]],\" active\"],null]]],null],[10],[1,1,0,0,\"\\n    \"],[9,\"div\",true],[12,\"class\",\"slide-out-header\",null],[10],[1,1,0,0,\"\\n      \"],[9,\"div\",true],[12,\"class\",\"flex-1\",null],[10],[1,1,0,0,\"\\n        \"],[9,\"h2\",true],[10],[1,0,0,0,[27,[24,3],[]]],[11],[1,1,0,0,\"\\n      \"],[11],[1,1,0,0,\"\\n      \"],[9,\"button\",false],[23,\"class\",\"f-close-btn\",null],[3,0,0,[27,[26,1,\"ModifierHead\"],[]],[\"click\",[27,[24,0],[\"close\"]]],null],[10],[1,1,0,0,\"\\n        close\\n      \"],[11],[1,1,0,0,\"\\n    \"],[11],[1,1,0,0,\"\\n\\n    \"],[9,\"div\",true],[12,\"class\",\"slide-out-body\",null],[10],[1,1,0,0,\"\\n\"],[5,[27,[26,0,\"BlockHead\"],[]],[[27,[24,0],[\"show\"]]],null,[[\"default\"],[{\"statements\":[[1,1,0,0,\"        \"],[16,1,null],[1,1,0,0,\"\\n\"]],\"parameters\":[]}]]],[1,1,0,0,\"    \"],[11],[1,1,0,0,\"\\n  \"],[11],[1,1,0,0,\"\\n\"],[11]],\"hasEval\":false,\"upvars\":[\"if\",\"on\"]}",
+    "meta": {
+      "moduleName": "ember-quickstart/components/slide-out/template.hbs"
+    }
+  });
+  _exports.default = _default;
+});
 ;define("ember-quickstart/components/welcome-page", ["exports", "ember-welcome-page/components/welcome-page"], function (_exports, _welcomePage) {
   "use strict";
 
@@ -275,7 +448,19 @@
     }
   }
   _exports.default = Router;
-  Router.map(function () {});
+  Router.map(function () {
+    this.route('products');
+  });
+});
+;define("ember-quickstart/routes/products", ["exports"], function (_exports) {
+  "use strict";
+
+  Object.defineProperty(_exports, "__esModule", {
+    value: true
+  });
+  _exports.default = void 0;
+  class ProductsRoute extends Ember.Route {}
+  _exports.default = ProductsRoute;
 });
 ;define("ember-quickstart/serializers/-default", ["exports", "@ember-data/serializer/json"], function (_exports, _json) {
   "use strict";
@@ -341,6 +526,22 @@
     "block": "{\"symbols\":[],\"statements\":[[7,\"welcome-page\",[],[[],[]],null],[1,1,0,0,\"\\n\"],[1,1,0,0,\"\\n\"],[1,0,0,0,[31,0,0,[27,[26,1,\"CallHead\"],[]],[[31,0,0,[27,[26,0,\"CallHead\"],[]],null,null]],null]]],\"hasEval\":false,\"upvars\":[\"-outlet\",\"component\"]}",
     "meta": {
       "moduleName": "ember-quickstart/templates/application.hbs"
+    }
+  });
+  _exports.default = _default;
+});
+;define("ember-quickstart/templates/products", ["exports"], function (_exports) {
+  "use strict";
+
+  Object.defineProperty(_exports, "__esModule", {
+    value: true
+  });
+  _exports.default = void 0;
+  var _default = Ember.HTMLBars.template({
+    "id": "lkyKQKz/",
+    "block": "{\"symbols\":[],\"statements\":[[1,0,0,0,[31,0,0,[27,[26,1,\"CallHead\"],[]],[[31,0,0,[27,[26,0,\"CallHead\"],[]],null,null]],null]],[1,1,0,0,\"\\n\"],[7,\"product-list\",[],[[\"@title\"],[\" thien\"]],null]],\"hasEval\":false,\"upvars\":[\"-outlet\",\"component\"]}",
+    "meta": {
+      "moduleName": "ember-quickstart/templates/products.hbs"
     }
   });
   _exports.default = _default;
@@ -420,7 +621,7 @@ catch(err) {
 
 ;
           if (!runningTests) {
-            require("ember-quickstart/app")["default"].create({"name":"ember-quickstart","version":"0.0.0+01f436bc"});
+            require("ember-quickstart/app")["default"].create({"LOG_ACTIVE_GENERATION":false,"LOG_VIEW_LOOKUPS":false,"rootElement":"#ember-testing","autoboot":false,"name":"ember-quickstart","version":"0.0.0+01f436bc"});
           }
         
 //# sourceMappingURL=ember-quickstart.map
