@@ -15,6 +15,7 @@
     }
   });
 });
+
 ;define("ember-quickstart/app", ["exports", "ember-resolver", "ember-load-initializers", "ember-quickstart/config/environment"], function (_exports, _emberResolver, _emberLoadInitializers, _environment) {
   "use strict";
 
@@ -36,6 +37,7 @@
   _exports.default = App;
   (0, _emberLoadInitializers.default)(App, _environment.default.modulePrefix);
 });
+
 ;define("ember-quickstart/component-managers/glimmer", ["exports", "@glimmer/component/-private/ember-component-manager"], function (_exports, _emberComponentManager) {
   "use strict";
 
@@ -49,6 +51,7 @@
     }
   });
 });
+
 ;define("ember-quickstart/components/product-list/component", ["exports"], function (_exports) {
   "use strict";
 
@@ -97,6 +100,7 @@
   })), _class));
   _exports.default = ProductListComponent;
 });
+
 ;define("ember-quickstart/components/product-list/template", ["exports"], function (_exports) {
   "use strict";
 
@@ -113,6 +117,7 @@
   });
   _exports.default = _default;
 });
+
 ;define("ember-quickstart/components/slide-out/component", ["exports"], function (_exports) {
   "use strict";
 
@@ -206,6 +211,7 @@
   })), _class));
   _exports.default = SlideOutComponent;
 });
+
 ;define("ember-quickstart/components/slide-out/template", ["exports"], function (_exports) {
   "use strict";
 
@@ -222,6 +228,7 @@
   });
   _exports.default = _default;
 });
+
 ;define("ember-quickstart/components/welcome-page", ["exports", "ember-welcome-page/components/welcome-page"], function (_exports, _welcomePage) {
   "use strict";
 
@@ -235,6 +242,7 @@
     }
   });
 });
+
 ;define("ember-quickstart/data-adapter", ["exports", "@ember-data/debug"], function (_exports, _debug) {
   "use strict";
 
@@ -248,6 +256,7 @@
     }
   });
 });
+
 ;define("ember-quickstart/helpers/app-version", ["exports", "ember-quickstart/config/environment", "ember-cli-app-version/utils/regexp"], function (_exports, _environment, _regexp) {
   "use strict";
 
@@ -284,6 +293,7 @@
   var _default = Ember.Helper.helper(appVersion);
   _exports.default = _default;
 });
+
 ;define("ember-quickstart/helpers/pluralize", ["exports", "ember-inflector/lib/helpers/pluralize"], function (_exports, _pluralize) {
   "use strict";
 
@@ -294,6 +304,7 @@
   var _default = _pluralize.default;
   _exports.default = _default;
 });
+
 ;define("ember-quickstart/helpers/singularize", ["exports", "ember-inflector/lib/helpers/singularize"], function (_exports, _singularize) {
   "use strict";
 
@@ -304,6 +315,7 @@
   var _default = _singularize.default;
   _exports.default = _default;
 });
+
 ;define("ember-quickstart/initializers/app-version", ["exports", "ember-cli-app-version/initializer-factory", "ember-quickstart/config/environment"], function (_exports, _initializerFactory, _environment) {
   "use strict";
 
@@ -322,6 +334,7 @@
   };
   _exports.default = _default;
 });
+
 ;define("ember-quickstart/initializers/container-debug-adapter", ["exports", "ember-resolver/resolvers/classic/container-debug-adapter"], function (_exports, _containerDebugAdapter) {
   "use strict";
 
@@ -339,6 +352,7 @@
   };
   _exports.default = _default;
 });
+
 ;define("ember-quickstart/initializers/ember-data-data-adapter", ["exports", "@ember-data/debug/setup"], function (_exports, _setup) {
   "use strict";
 
@@ -352,6 +366,7 @@
     }
   });
 });
+
 ;define("ember-quickstart/initializers/ember-data", ["exports", "ember-data", "ember-data/setup-container"], function (_exports, _emberData, _setupContainer) {
   "use strict";
 
@@ -371,6 +386,7 @@
   };
   _exports.default = _default;
 });
+
 ;define("ember-quickstart/initializers/export-application-global", ["exports", "ember-quickstart/config/environment"], function (_exports, _environment) {
   "use strict";
 
@@ -417,6 +433,7 @@
   };
   _exports.default = _default;
 });
+
 ;define("ember-quickstart/instance-initializers/ember-data", ["exports", "ember-data/initialize-store-service"], function (_exports, _initializeStoreService) {
   "use strict";
 
@@ -430,6 +447,7 @@
   };
   _exports.default = _default;
 });
+
 ;define("ember-quickstart/router", ["exports", "ember-quickstart/config/environment"], function (_exports, _environment) {
   "use strict";
 
@@ -452,6 +470,7 @@
     this.route('products');
   });
 });
+
 ;define("ember-quickstart/routes/products", ["exports"], function (_exports) {
   "use strict";
 
@@ -462,6 +481,7 @@
   class ProductsRoute extends Ember.Route {}
   _exports.default = ProductsRoute;
 });
+
 ;define("ember-quickstart/serializers/-default", ["exports", "@ember-data/serializer/json"], function (_exports, _json) {
   "use strict";
 
@@ -475,6 +495,7 @@
     }
   });
 });
+
 ;define("ember-quickstart/serializers/-json-api", ["exports", "@ember-data/serializer/json-api"], function (_exports, _jsonApi) {
   "use strict";
 
@@ -488,6 +509,7 @@
     }
   });
 });
+
 ;define("ember-quickstart/serializers/-rest", ["exports", "@ember-data/serializer/rest"], function (_exports, _rest) {
   "use strict";
 
@@ -501,6 +523,7 @@
     }
   });
 });
+
 ;define("ember-quickstart/services/store", ["exports", "ember-data/store"], function (_exports, _store) {
   "use strict";
 
@@ -514,6 +537,7 @@
     }
   });
 });
+
 ;define("ember-quickstart/templates/application", ["exports"], function (_exports) {
   "use strict";
 
@@ -530,6 +554,7 @@
   });
   _exports.default = _default;
 });
+
 ;define("ember-quickstart/templates/products", ["exports"], function (_exports) {
   "use strict";
 
@@ -546,6 +571,7 @@
   });
   _exports.default = _default;
 });
+
 ;define("ember-quickstart/transforms/boolean", ["exports", "@ember-data/serializer/-private"], function (_exports, _private) {
   "use strict";
 
@@ -559,6 +585,7 @@
     }
   });
 });
+
 ;define("ember-quickstart/transforms/date", ["exports", "@ember-data/serializer/-private"], function (_exports, _private) {
   "use strict";
 
@@ -572,6 +599,7 @@
     }
   });
 });
+
 ;define("ember-quickstart/transforms/number", ["exports", "@ember-data/serializer/-private"], function (_exports, _private) {
   "use strict";
 
@@ -585,6 +613,7 @@
     }
   });
 });
+
 ;define("ember-quickstart/transforms/string", ["exports", "@ember-data/serializer/-private"], function (_exports, _private) {
   "use strict";
 
@@ -598,30 +627,22 @@
     }
   });
 });
+
 ;
 
 ;define('ember-quickstart/config/environment', [], function() {
-  var prefix = 'ember-quickstart';
-try {
-  var metaName = prefix + '/config/environment';
-  var rawConfig = document.querySelector('meta[name="' + metaName + '"]').getAttribute('content');
-  var config = JSON.parse(decodeURIComponent(rawConfig));
-
-  var exports = { 'default': config };
-
-  Object.defineProperty(exports, '__esModule', { value: true });
-
-  return exports;
-}
-catch(err) {
-  throw new Error('Could not read config from meta tag with name "' + metaName + '".');
-}
-
+  
+          var exports = {
+            'default': {"modulePrefix":"ember-quickstart","environment":"test","rootURL":"/","locationType":"none","EmberENV":{"FEATURES":{},"EXTEND_PROTOTYPES":{"Date":false},"_APPLICATION_TEMPLATE_WRAPPER":false,"_DEFAULT_ASYNC_OBSERVERS":true,"_JQUERY_INTEGRATION":false,"_TEMPLATE_ONLY_GLIMMER_COMPONENTS":true},"APP":{"LOG_ACTIVE_GENERATION":false,"LOG_VIEW_LOOKUPS":false,"rootElement":"#ember-testing","autoboot":false,"name":"ember-quickstart","version":"0.0.0+01f436bc"},"exportApplicationGlobal":true}
+          };
+          Object.defineProperty(exports, '__esModule', {value: true});
+          return exports;
+        
 });
 
 ;
           if (!runningTests) {
-            require("ember-quickstart/app")["default"].create({"name":"ember-quickstart","version":"0.0.0+01f436bc"});
+            require("ember-quickstart/app")["default"].create({"LOG_ACTIVE_GENERATION":false,"LOG_VIEW_LOOKUPS":false,"rootElement":"#ember-testing","autoboot":false,"name":"ember-quickstart","version":"0.0.0+01f436bc"});
           }
         
 //# sourceMappingURL=ember-quickstart.map

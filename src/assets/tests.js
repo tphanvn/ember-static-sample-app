@@ -38,12 +38,14 @@ define("ember-quickstart/tests/integration/components/product-list-test", ["quni
     });
   });
 });
+
 define("ember-quickstart/tests/test-helper", ["ember-quickstart/app", "ember-quickstart/config/environment", "@ember/test-helpers", "ember-qunit"], function (_app, _environment, _testHelpers, _emberQunit) {
   "use strict";
 
   (0, _testHelpers.setApplication)(_app.default.create(_environment.default.APP));
   (0, _emberQunit.start)();
 });
+
 define("ember-quickstart/tests/unit/routes/products-test", ["qunit", "ember-qunit"], function (_qunit, _emberQunit) {
   "use strict";
 
@@ -55,23 +57,15 @@ define("ember-quickstart/tests/unit/routes/products-test", ["qunit", "ember-quni
     });
   });
 });
+
 define('ember-quickstart/config/environment', [], function() {
-  var prefix = 'ember-quickstart';
-try {
-  var metaName = prefix + '/config/environment';
-  var rawConfig = document.querySelector('meta[name="' + metaName + '"]').getAttribute('content');
-  var config = JSON.parse(decodeURIComponent(rawConfig));
-
-  var exports = { 'default': config };
-
-  Object.defineProperty(exports, '__esModule', { value: true });
-
-  return exports;
-}
-catch(err) {
-  throw new Error('Could not read config from meta tag with name "' + metaName + '".');
-}
-
+  
+          var exports = {
+            'default': {"modulePrefix":"ember-quickstart","environment":"test","rootURL":"/","locationType":"none","EmberENV":{"FEATURES":{},"EXTEND_PROTOTYPES":{"Date":false},"_APPLICATION_TEMPLATE_WRAPPER":false,"_DEFAULT_ASYNC_OBSERVERS":true,"_JQUERY_INTEGRATION":false,"_TEMPLATE_ONLY_GLIMMER_COMPONENTS":true},"APP":{"LOG_ACTIVE_GENERATION":false,"LOG_VIEW_LOOKUPS":false,"rootElement":"#ember-testing","autoboot":false,"name":"ember-quickstart","version":"0.0.0+01f436bc"},"exportApplicationGlobal":true}
+          };
+          Object.defineProperty(exports, '__esModule', {value: true});
+          return exports;
+        
 });
 
 require('ember-quickstart/tests/test-helper');
